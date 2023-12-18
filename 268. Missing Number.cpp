@@ -11,6 +11,6 @@ public:
     }
 };
 
-
+  // stiver bhiya sheet leetcode problem h
 // aporch h pahle totall numer ka sum nikale lenge jaise n=9 h to 9*(9+1)/2 = 90/2=45;
 //ab arrray ka sum nikal lenge   1+2+3+4+5+6+7+9= 37 fir total se - kardo 45-37 =8 missi

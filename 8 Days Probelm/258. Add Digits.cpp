@@ -20,3 +20,19 @@ public:
 //or num= ans; se jo asn ke ander 14 aaya use fir se proces ke liye first loop lagya kiyo ki ans single digit men lana h  
 
 https://www.youtube.com/watch?v=0j7879JOgIU
+
+// we can do like it 
+class Solution {
+public:
+    int addDigits(int num) {
+      while(num>9){
+      int sum=0;
+      while(num!=0){
+          sum=sum+num%10;
+          num=num/10;
+      }
+      num= sum;
+    }
+    return num;
+    }
+};

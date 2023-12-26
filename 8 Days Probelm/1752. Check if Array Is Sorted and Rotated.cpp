@@ -9,7 +9,7 @@ public:
                 count++;
             }
         }
-        if(nums[n-1]>nums[0])
+        if(nums[n-1]>nums[0])  // ager yahan ; laga du to ye count ++ nhi hoga es se acha h brackit ka use karu
             count++;
             return count<=1;
         

@@ -14,7 +14,7 @@ public:
 
                     for (int l = 0; l < rows; l++) {
                         // making all the columns of column 'j' a '0'
-                        matrix[l][j] = 0;
+                        matrix[l][j] = 0; 
                     }
                 }
             }

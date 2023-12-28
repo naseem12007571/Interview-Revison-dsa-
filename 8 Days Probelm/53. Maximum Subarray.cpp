@@ -5,8 +5,11 @@ public:
         int sum=0;
         int maxi=INT_MIN;
         for(int i=0;i<nums.size();i++){
+            // step 1 sum nikala
             sum=sum+nums[i];
+            // step 2 maxi sum nikala
             maxi=max(maxi, sum);
+            // ager mera sum 0 se chota ata h -2 -1 ye sab aata h use zero kardo
             if(sum<0){
                 sum=0;
             }

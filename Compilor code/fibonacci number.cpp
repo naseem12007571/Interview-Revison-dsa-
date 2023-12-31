@@ -8,7 +8,7 @@ int main()
   
   int last=0,previous=1,current;
   
-  for(int i=2;i<x;i++){
+  for(int i=2;i<=x;i++){
       current=last+previous;
       last=previous;
       previous=current;

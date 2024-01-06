@@ -23,3 +23,26 @@ public:
         return true;
     }
 };
+
+// second method 
+class Solution {
+public:
+    bool isIsomorphic(string s, string t) {
+        vector<int> sLastPos(256, -1);
+        vector<int> tLastPos(256, -1);
+
+        int n = s.size();
+
+        for (int i = 0; i < n; i++) {
+            if (sLastPos[s[i]] != tLastPos[t[i]]) {
+                return false;
+            }
+
+            sLastPos[s[i]] = i;
+            tLastPos[t[i]] = i;
+        }
+
+        return true;
+    }
+};
+

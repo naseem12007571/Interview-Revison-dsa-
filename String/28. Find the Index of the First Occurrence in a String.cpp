@@ -16,7 +16,7 @@ public:
         // }
         // return -1;
 
-
+// https://www.youtube.com/watch?v=v3zdhmdrasE&t=346s
         // second method
 
         return haystack.find(needle);

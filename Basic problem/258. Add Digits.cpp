@@ -14,7 +14,7 @@ public:
     }
 };
 
-// compilor code here 
+// compilor code here  it will give the result sum in single digit like 1 to 9 
 #include<iostream>
 using namespace std;
 
@@ -34,4 +34,28 @@ int main() {
     cout << num;
     
     return 0;
+}
+
+
+
+
+
+
+// it will give the result in  2 or more number sum 
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    
+    int n;
+    cout<<"Enter the number of n ";
+    cin>>n;
+    int sum=0;
+    while(n!=0){
+        sum=sum+n%10;
+        n=n/10;
+    }
+    
+        cout<<sum;
+    
 }

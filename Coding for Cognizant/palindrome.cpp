@@ -12,13 +12,35 @@ int main()
     
     while(copy!=0){
         rem=copy%10;
-        copy=copy/10;
         ans=ans*10+rem;
+        copy=copy/10;
+        
     }
     if(ans==n){
-        cout<<"number is palindrom";
+        cout<<"number is palindrome";
         return 0;
     }
-    cout<<"number is not palindrom";
+    cout<<"number is not palindrome";
 
 }
+
+// python code 
+
+num = int(input("Enter the number: "))
+ans = 0
+temp = num
+
+while num > 0:
+    dig = num % 10
+    ans = ans * 10 + dig
+    num = num // 10  # Use integer division
+
+if temp == ans:
+    print("The number is a palindrome")
+else:
+    print("The number is not a palindrome")
+
+
+
+
+

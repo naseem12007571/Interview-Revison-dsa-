@@ -1,0 +1,62 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter the number of n ";
+    cin>>n;
+   
+   
+    int arr[100];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+     // we set the default min value 
+    int maxi=INT_MIN;  // INT has a range -2 ki power 31-  2 ki power 31-1
+    for(int i=0;i<n;i++){
+        maxi= max(maxi,arr[i]); // here we can use predefind function
+        // if(arr[i]>maxi){
+        //     maxi=arr[i];
+        // }
+    }
+    cout<<"maxi value is "<<maxi;
+    
+}
+
+
+
+// both max and mini
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter the number of n ";
+    cin>>n;
+   
+   
+    int arr[100];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+     // we set the default min value 
+    int maxi=INT_MIN;  // INT has a range -2 ki power 31-  2 ki power 31-1
+    for(int i=0;i<n;i++){
+        // maxi= max(maxi,arr[i]); // here we can use predefind function
+        if(arr[i]>maxi){
+            maxi=arr[i];
+        }
+    }
+    int mini=INT_MAX;
+    for(int i=0;i<n;i++){
+        if(arr[i]<mini){
+            mini=arr[i];
+        }
+    }
+    
+    cout<<"maxi value is "<<maxi<<endl;
+    
+    cout<<"mini value is "<<mini;
+    
+}

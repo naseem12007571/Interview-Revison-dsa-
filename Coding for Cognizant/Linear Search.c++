@@ -1,3 +1,18 @@
+list= [12, 3, 4, 5, 67, 8]
+def search(list, key):
+    for i in range(len(list)):
+        if list[i] == key:
+            return i
+    return -1
+key = 5
+index = search(list, key)
+print("Index is", index)
+
+
+
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
